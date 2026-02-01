@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [24.x, 22.x, 20.x, 18.x]
+        node-version: [ 18.x, 20.x, 22.x, 24.x]
 
     steps:
     - uses: actions/checkout@v4
@@ -30,7 +30,7 @@ jobs:
       # The base-href is crucial for correct routing on GitHub Pages
 
     - name: Deploy to GitHub Pages
-      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v2.0.0 # Use a specific version of the action
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.4.0 # Use a specific version of the action
       with:
         github_access_token: ${{ secrets.GITHUB_TOKEN }} # GitHub provided token for access
         # The folder where index.html resides in the build output
