@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "resume-angular": {
+    "resume": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "resume-angular:build:production"
+              "buildTarget": "resume:build:production"
             },
             "development": {
-              "buildTarget": "resume-angular:build:development"
+              "buildTarget": "resume:build:development"
             }
           },
           "defaultConfiguration": "development"
