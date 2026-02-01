@@ -1,4 +1,10 @@
-@import 'fonts.scss';
+@use 'fonts.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Optional, but recommended */
+}
 
 :root {
     --text-color-dark: 0,0,0;
@@ -18,6 +24,10 @@ body {
     margin: 0;
     font-family: 'Aileron';
     font-size: 0.9em;
+}
+
+p {
+    margin: 0.5em 0;
 }
 
 a,
